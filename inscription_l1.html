@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Formulaire d'inscription</title>
+	<style type="text/css">
+		form{
+			font-family: Verdana,sans-serif;
+			background-color: #f5f5dc;
+			padding: 20px;
+			margin-bottom: 20px;
+			font-size: 15pt;
+			text-align: justify;
+		}
+		legend{
+			font-family: Arial;
+			font-style: italic;
+			font-size: 19pt;
+			text-decoration: underline;
+			color: #0f6eaa;
+		}
+		header{
+			text-align: center;
+			color: #ff0000;
+			font-size: 24pt;
+		}
+		h2{
+			text-align: justify;
+			text-decoration: underline;
+			color: #050afd;
+			font-size: 20pt;
+		}
+	</style>
+</head>
+<body>
+	<header>UNIVERSITE D'ANTANANARIVO</header>
+	<header>FACULTE DES SCIENCES</header>
+	<header>MENTION INFORMATIQUE ET TECHNOLOGIE</header>
+	<br><br>
+	<header><img src="logo.jpg"></header>
+	<h2>Formulaire d'inscription</h2>
+	<form  action="traitement.php" method="get">
+		<p><font color="black"><em>En vue de la prochaine rentrée unuiversitaire 2023-2024, l'inscription pour l'entrée en première année< de licence dans la MIT requiert le remplissage de ce formulaire. Tous les champs sont à remplir par les informations conformes à votre identité. Enregistrez les informations vient à dire que votre identité fut envoyer dans notre serveur. Toutes tentatives de falsification sera peine de poursuite judiciaire</em></font></p>
+		<p>En cas de problèmes ou de bugs dans ce formulaire, veuillez envoyer un email au <a href="andriamiharitsoa27@gmail.com">andriamiharitsoa27@gmail.com</a>.</p>
+
+		<fieldset>
+			<legend><strong>Informations personnelles:</strong></legend>
+			<label for="nom">Nom:</label>
+			<input type="text" name="nom" placeholder="Entrez votre nom" required>
+			<label for="prenom">Prénom:</label>
+			<input type="text" name="prenom" placeholder="Entrez votre prénom" required>
+			<br>
+			<label for="Date de naissance">Date de naissance:</label>
+			<input type="text" name="date de naissance" placeholder="JJ/MM/AAAA" required>
+			<label for="Lieu">à:</label>
+			<input type="text" name="lieu" placeholder="Lieu de naissance" required>
+			<br>
+			<label for="adresse">Adresse exacte:</label>
+			<input type="text" name="adresse"  placeholder="Votre adresse" required>
+			<br>
+			<label for="téléphone">Tél:</label>
+			<input type="text" name="téléphone" placeholder="Votre numero de téléphone" required>
+			<br>
+			<label for="sexe">Sexe:</label>
+			Masculin<input type="radio" name="sexe" value="M">&nbsp&nbsp
+			Féminin<input type="radio" name="sexe" value="F">
+			<br>
+			<label for="nationalité">Nationalité:</label>
+			<input type="text" name="nationalité" placeholder="Malagasy ou autres" required>
+			<br>
+			<label for="parents">Nom des parents:</label>
+			<ol>
+				<li>Père:<input type="text" name="parents" placeholder="Nom du père"></li>
+				<li>Mère:<input type="text" name="parents" placeholder="Nom de la mère"></li>
+				<li>Tuteur(trice):<input type="text" name="parents" placeholder="Nom du tuteur"></li>
+			</ol>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend><strong>Renseignements sur le baccalauréat:</strong></legend>
+			<label for="num">Numéro d'inscription:</label>
+			<input type="text" name="num" placeholder="num du bacc" required>
+			<label for="serie">Série:</label>
+			<input type="text" name="serie" placeholder="C ou S" required>
+			<br>
+			<label for="centre">Centre d'examen:</label>
+			<input type="text" name="centre" placeholder="votre centre d'examen" required>
+			<br>
+			Année d'obtention:<input type="text" name="text" placeholder="année de votre bacc" required>
+		</fieldset>
+		<input type="submit" name="Enregistrer" value="Enregistrer">
+		<input type="reset" name="Tout effacer" value="Tout effacer">
+	</form>
+</body>
+</html>
